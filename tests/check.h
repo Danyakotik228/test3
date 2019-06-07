@@ -15,11 +15,11 @@ TEST(check, num0){
             field[i][j] = 0;
         }
     }
-    for(i=0;i<4;i++) a[i].x = 0;
-    a[0].y = 21;
-    a[1].y = 20;
-    a[2].y = 19;
-    a[3].y = 18;
+    for(i=0;i<4;i++) a[i].x = 2;
+    a[0].y = 48;
+    a[1].y = 47;
+    a[2].y = 46;
+    a[3].y = 45;
     if(!check(field))
     {
         SUCCEED();
@@ -36,11 +36,11 @@ TEST(check, num1){
             field[i][j] = 0;
         }
     }
-    for(i=0;i<4;i++) a[i].y = 5;
-    a[0].x = 11;
-    a[1].x = 10;
-    a[2].x = 9;
-    a[3].x = 8;
+    for(i=0;i<4;i++) a[i].y = 6;
+    a[0].x = 22;
+    a[1].x = 21;
+    a[2].x = 20;
+    a[3].x = 19;
     if(!check(field))
     {
         SUCCEED();
@@ -57,11 +57,11 @@ TEST(check, num2){
             field[i][j] = 0;
         }
     }
-    for(i=0;i<4;i++) a[i].y = 5;
-    a[0].x = -1;
-    a[1].x = 0;
-    a[2].x = 1;
-    a[3].x = 2;
+    for(i=0;i<4;i++) a[i].y = 6;
+    a[0].x = -10;
+    a[1].x = -9;
+    a[2].x = -8;
+    a[3].x = -7;
     if(!check(field))
     {
         SUCCEED();
@@ -78,12 +78,12 @@ TEST(check, num3){
             field[i][j] = 0;
         }
     }
-    field[5][9] = 1;
-    for(i=0;i<4;i++) a[i].y = 5;
-    a[0].x = 9;
-    a[1].x = 8;
-    a[2].x = 7;
-    a[3].x = 6;
+    field[6][5] = 1;
+    for(i=0;i<4;i++) a[i].y = 6;
+    a[0].x = 5;
+    a[1].x = 4;
+    a[2].x = 3;
+    a[3].x = 2;
     if(!check(field))
     {
         SUCCEED();
@@ -100,10 +100,10 @@ TEST(check, num4){
         }
     }
     for(i=0;i<4;i++) a[i].y = 5;
-    a[0].x = 9;
-    a[1].x = 8;
-    a[2].x = 7;
-    a[3].x = 6;
+    a[0].x = 5;
+    a[1].x = 4;
+    a[2].x = 3;
+    a[3].x = 2;
     if(check(field))
     {
         SUCCEED();
