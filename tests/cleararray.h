@@ -37,7 +37,7 @@ TEST(cleararray, num1) {
     int field[20][10];
     for (int i = 0; i < 20; i++) {
         for(int j = 0; j < 10; j++){
-            field[i][j] = rand() % 1000;
+            field[i][j] = <random> % 1000;
         }
     }
     cleararray(field);
