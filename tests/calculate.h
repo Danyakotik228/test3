@@ -9,23 +9,23 @@ extern "C" {
 
 //Проверка на добавление очков к изначально нулевой сумме
 TEST(calculate, num0){
-    ASSERT_EQ(calculate(0, 5), 5);
-    ASSERT_EQ(calculate(0, 1000), 1000);
+    ASSERT_EQ(calculate(0, 8), 8);
+    ASSERT_EQ(calculate(0, 2525), 2525);
     ASSERT_EQ(calculate(0, 0), 0);
 }
 
 //Проверка на добавление нуля очков
 TEST(calculate, num1){
-    ASSERT_EQ(calculate(5, 0), 5);
-    ASSERT_EQ(calculate(1000, 0), 1000);
+    ASSERT_EQ(calculate(7, 0), 7);
+    ASSERT_EQ(calculate(2525, 0), 2525);
     ASSERT_EQ(calculate(0, 0), 0);
 }
 
-//Проерка функции на работу
+//Проверка функции на работу
 TEST(calculate, num2){
-    ASSERT_EQ(calculate(5, 5), 10);
-    ASSERT_EQ(calculate(3, 4), 7);
-    ASSERT_EQ(calculate(2, 10), 12);
+    ASSERT_EQ(calculate(7, 5), 12);
+    ASSERT_EQ(calculate(14, 14), 28);
+    ASSERT_EQ(calculate(333, 333), 666);
 }
 
 #endif // CALCULATE_H
